@@ -1,4 +1,120 @@
-h1 {
-  text-align: center;
-  color: blue;
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/341/original/download-2.jpg?1679607301");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3 {
+  text-align: left;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 75px;
+  margin-bottom: -7rem;
+}
+ul {
+  position: relative;
+  bottom: 125px;
+  left: 225px;
+  font-weight: normal;
+  font-size: 12px;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  margin-top: 100px;
+  padding: 70px;
+  border: 1px solid rgb(68, 73, 76);
+  border-radius: 10px;
+  padding-top: 65px;
+}
+
+.search-bar {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 18px;
+  padding: 3px;
+}
+.btn-primary {
+  position: flex;
+  left: 5px;
+  background: gray;
+  border: gray;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 50%;
+  transition: all 200ms ease-in-out;
+  color: white;
+  padding: 5px 10px;
+}
+.btn-primary:hover {
+  background: rgb(126, 163, 188);
+  border: #0b72a0;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.current-weather {
+  width: 80px;
+}
+
+.degree {
+  position: relative;
+  bottom: 80px;
+  left: 88px;
+
+  font-size: 15px;
+}
+.temperature {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.units {
+  position: relative;
+  top: -36px;
+}
+.celcius {
+  font-height: bold;
+}
+.phw {
+  font-size: 16px;
+  font-weight: light;
+  left: 300px;
+  bottom: 136px;
+}
+
+.flex-container {
+  width: 100%;
+  border: none;
+  margin-top: -3rem;
+  margin-bottom: -7rem;
+  margin-right: -1.5rem;
+}
+.sat,
+.mon,
+.wed {
+  margin-left: -0.6rem;
+  font-weight: bold;
+}
+.sun {
+  margin-left: 0.1rem;
+  font-weight: bold;
+}
+.tue {
+  margin-left: -0.2px;
+  font-weight: bold;
+}
+.temp {
+  font-weight: bold;
 }
