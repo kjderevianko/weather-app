@@ -29,10 +29,11 @@ li {
 }
 footer {
   position: relative;
-  left: 110px;
-  margin: 5px;
+  left: 280px;
+  margin: 10px;
 }
 .container {
+  max-width: 800px;
   margin-top: 100px;
   padding: 70px;
   border: 1px solid rgb(68, 73, 76);
