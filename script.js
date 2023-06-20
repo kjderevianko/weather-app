@@ -1,16 +1,3 @@
-//Feature 2
-
-function searchCity(event) {
-  event.preventDefault();
-
-  let searchInput = document.querySelector("#search-input");
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${searchInput.value}`;
-}
-
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", searchCity);
-
 //Feature 3
 function showCelsius(event) {
   event.preventDefault();
@@ -100,7 +87,20 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-let apiKey = "5ef4de8cd6b7fefcd7c42f98cf464ce8";
-let city = "Haarlem";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(displayTemperature);
+
+function search(city) {
+  let apiKey = "5ef4de8cd6b7fefcd7c42f98cf464ce8";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+search("Haarlem");
