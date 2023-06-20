@@ -85,6 +85,14 @@ footer {
 
   font-size: 15px;
 }
+.degree .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.degree .active:hover {
+  text-decoration: none;
+}
 .temperature {
   font-size: 64px;
   font-weight: 400;
