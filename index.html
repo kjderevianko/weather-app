@@ -47,14 +47,14 @@
         </div>
       </form>
       <h1 id="city"></h1>
-      <h2 id ="date"></h2>
-      <h3 id ="description"></h3>
+      <h2 id="date"></h2>
+      <h3 id="description"></h3>
       <h4>
         <img
           src=""
           class="current-weather float-left"
           alt="cloudy-rainy"
-          id ="icon"
+          id="icon"
         />
         <div class="degree">
           <span class="temperature" id="temperature"></span>
@@ -64,55 +64,25 @@
           </span>
         </div>
         <ul class="phw">
-          <li>Humidity: <span id ="humidity"></span>%</li>
+          <li>Humidity: <span id="humidity"></span>%</li>
           <li>Wind: <span id="wind"></span>Km/H</li>
         </ul>
-      </h3>
-      <br />
+      </h4>
       <br />
       <hr />
-      <div class="flex-container container">
+      <div class="weather-forecast">
         <div class="row">
-          <div class="col align-item">
-            <span class="sat">Saturday</span><br />
+          <div class="col-2">
+            <div class="weather-forecast-date">Sat</div>
             <img
-              src="images/rain-cloud-icon-9.png"
-              width="50"
-              alt="rain"
-            /><br />
-            <span class="temp">11°</span>|51°
-          </div>
-
-          <div class="col text-align">
-            <span class="sun">Sunday</span><br />
-            <img
-              src="images/rain-cloud-icon-9.png"
-              width="50"
-              alt="rain"
-            /><br />
-            <span class="temp">8°</span>|46°
-          </div>
-
-          <div class="col text-align">
-            <span class="mon">Monday</span><br />
-            <img src="images/sunshine-icon-2.png" width="50" alt="sun" /><br />
-            <span class="temp">7°</span>|44°
-          </div>
-
-          <div class="col text-align">
-            <span class="tue">Tuesday</span><br />
-            <img src="images/sunshine-icon-2.png" width="50" alt="sun" /><br />
-            <span class="temp">8°</span>|46°
-          </div>
-
-          <div class="col text-align">
-            <span class="wed">Wednesday</span><br />
-            <img
-              src="images/rain-cloud-icon-9.png"
-              width="50"
-              alt="rain"
-            /><br />
-            <span class="temp">10°</span>|50°
+              src="http://openweathermap.org/img/wn/50d@2x.png"
+              alt=""
+              width="42"
+            />
+            <div class="class weather-forecast-temperatures">
+              <span class="weather-forecast-temperature-max">20°</span>|
+              <span class="weather-forecast-temperature-min">11°</span>
+            </div>
           </div>
         </div>
       </div>
